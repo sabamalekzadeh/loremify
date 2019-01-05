@@ -2,6 +2,11 @@ const express = require('express');
 const path = require('path');
 const cors = require('cors');
 const bodyParser = require('body-parser');
+const mongoose = require('mongoose');
+
+mongoose.connect('mongodb://malekzade:admin123@ds149414.mlab.com:49414/loremify');
+require('./model/imageModel');
+
 const app = express();
 
 const routes = require('./routes');
