@@ -11,6 +11,7 @@ if("undefined"==typeof jQuery)throw new Error("Bootstrap's JavaScript requires j
 //# sourceMappingURL=toastr.js.map
 
 $(document).ready(function(){
+    console.log('Hello to Jquery!');
     $('.produce_text').click(function(){
         var lorem = new Array();
         if($("#farsi").prop("checked")){

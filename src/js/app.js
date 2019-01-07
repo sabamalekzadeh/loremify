@@ -1,4 +1,5 @@
 $(document).ready(function(){
+    console.log('Hello to Jquery!');
     $('.produce_text').click(function(){
         var lorem = new Array();
         if($("#farsi").prop("checked")){
@@ -10,6 +11,7 @@ $(document).ready(function(){
         
         var selected = $('.textOption').find(":selected").val();
         var number = $('.number').val();
+        
         if(number.length > 0 && selected.length > 0) {
             
             var temp = '';

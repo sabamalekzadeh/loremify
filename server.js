@@ -4,10 +4,10 @@ const cors = require('cors');
 const bodyParser = require('body-parser');
 const mongoose = require('mongoose');
 
-mongoose.connect('mongodb://malekzade:admin123@ds149414.mlab.com:49414/loremify');
+mongoose.connect('mongodb://malekzadeh:admin123@ds149894.mlab.com:49894/loremify');
 require('./model/imageModel');
 
-const app = express();
+const app = express(); // copy of server 
 
 const routes = require('./routes');
 
