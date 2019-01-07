@@ -2,7 +2,7 @@ var gulp = require('gulp');
 var less = require('gulp-less');
 var concat = require('gulp-concat');
 var rtlcss = require('gulp-rtlcss');
-
+// task running
 gulp.task('css', function(){
     return gulp.src('src/less/app.less')
       .pipe(less())
@@ -16,7 +16,7 @@ var jsPath = {
     toastR : './node_modules/toastr/build/toastr.min.js',
     allJs : 'src/js/*.js'
 }
-
+// module boundeling
 gulp.task('js',function(){
     return gulp.src([jsPath.jQuery,jsPath.boostrapJS,jsPath.toastR,jsPath.allJs])
     .pipe(concat('app.js'))
